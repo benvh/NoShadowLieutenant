@@ -1,0 +1,36 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "NoShadowLieutenant",
+    "name": "No Shadow Lieutenant",
+    "authors": [ "benvh" ],
+    "description": "Disables the shadow lieutenant",
+    "category": "monster_exclude",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "MONSTER_BLACKLIST",
+    "monsters": [
+      "mon_lieutenant_shadow"
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_LIEUTENANT_SHADOW_WARN",
+    "//": "no point in warning the player if the shadow is never spawned",
+    "effect": []
+  },
+  {
+
+    "type": "effect_on_condition",
+    "id": "EOC_LIEUTENANT_ACTIVATE_SHADOW",
+    "//": "no point in running this if the shadow is never spawned",
+    "effect": []
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_LIEUTENANT_SHADOW_CHECK_POS",
+    "//": "no point in running this if the shadow is never spawned",
+    "effect": []
+  }
+]
